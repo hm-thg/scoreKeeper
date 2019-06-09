@@ -24,7 +24,8 @@ export class ProjectComponent implements OnInit {
   changepara(){
        this.limit = document.querySelector('input').value
        document.querySelector('p').textContent =  'Playing to : ' + this.limit
-  }
+       document.querySelector('p').style.fontWeight = 'bold'
+      }
 
   player1(){
   if(this.decided === false && this.var1 < this.limit){
