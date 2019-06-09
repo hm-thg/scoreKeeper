@@ -1,25 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css']
+  styleUrls: ['./project.component.css'],
+
 })
+
 export class ProjectComponent implements OnInit {
   header: string = '0 to 0';
   para: string = 'Playing to : 5';
-  limit: number = 5;
+  limit: any = 5;
   var1: number = 0;
   var2: number = 0;
   decided: boolean = false;
   p: number;
 
-  constructor() { }
 
+  constructor() {}
   ngOnInit() {
   }
   changepara(){
-       this.limit = document.getElementById('input').value
+       this.limit = document.querySelector('input').value
        document.querySelector('p').textContent =  'Playing to : ' + this.limit
   }
 
@@ -48,6 +51,6 @@ export class ProjectComponent implements OnInit {
   this.var1 = 0
   this.var2= 0
   this.decided = false
-  document.getElementById('input').value = null
+  document.querySelector('input').value = null
   }
 }
