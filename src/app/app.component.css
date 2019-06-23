@@ -1,12 +1,14 @@
 .outer-container {
-  background:rgb(33, 6, 68);
+  background: rgb(33, 6, 68);
   width: 100%;
   position: fixed;
-  top:30%;
+  top: 30%;
 }
+
 .container {
   background: lightblue;
 }
+
 @media (max-width: 1200px) {
   .container {
     width: 75%;
